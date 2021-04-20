@@ -18,7 +18,7 @@ class AdminSeeder extends Seeder
       DB::table('admins')->insert([
           'username' => env('ADMIN_USERNAME', 'lenshubadmin'),
            'level' => 5,
-           'password' => Hash::make(env('ADMIN_PASS', 'lenshubadmin')),
+           'password' => Hash::make(env('ADMIN_PASS', 'abcd1234')),
            'created_at' => date('Y/m/d H:i:s'),
            'updated_at' => date('Y/m/d H:i:s'),
         ]);
