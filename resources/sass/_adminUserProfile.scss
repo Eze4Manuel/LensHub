@@ -1,0 +1,260 @@
+//General Page Styles
+#dashboardindex{
+  #deleteaccountbutton{
+    @include buttons;
+    background: red;
+  }
+  #changepasswordbutton{
+    @include buttons;
+  }
+  .makeStyles-cardAvatar-67.makeStyles-cardAvatarProfile-68 img{
+    width: 150px;
+    height: 150px;
+  }
+  .makeStyles-tabWrapper-124, .makeStyles-cardTitle-118, .makeStyles-cardTitleWhite-60{
+    font-weight: $font-family-sans-serif!important;
+  }
+  .makeStyles-cardFooter-83{
+    button{
+      @include buttons;
+    }
+  }
+.makeStyles-cardHeader-73.makeStyles-warningCardHeader-77:not(.makeStyles-cardHeaderIcon-76), .makeStyles-cardHeader-73.makeStyles-successCardHeader-78:not(.makeStyles-cardHeaderIcon-76), .makeStyles-cardHeader-73.makeStyles-dangerCardHeader-79:not(.makeStyles-cardHeaderIcon-76), .makeStyles-cardHeader-73.makeStyles-infoCardHeader-80:not(.makeStyles-cardHeaderIcon-76), .makeStyles-cardHeader-73.makeStyles-primaryCardHeader-81:not(.makeStyles-cardHeaderIcon-76), .makeStyles-cardHeader-73.makeStyles-roseCardHeader-82:not(.makeStyles-cardHeaderIcon-76){
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    button.btn{
+      @include buttons;
+    }
+  }
+  header.MuiPaper-root{
+    div{
+      a.MuiButtonBase-root{
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+      }
+    }
+  }
+  .MuiTabs-flexContainer{
+    button{
+      flex-grow: 1!important;
+    }
+  }
+  form#userprofileform{
+    width: 90%!important;
+    margin: auto;
+    .row{
+      h4{
+        font-weight: bold;
+        font-family: $font-family-sans-serif!important;
+        font-size: 20px;
+      }
+
+      .input-field{
+        label{
+          color: #111;
+          font-size: 15px;
+          padding-left: 0px;
+          margin-left: 10px;
+          top: -9px;
+          font-weight: bold;
+        }
+        i{
+          position: relative;
+          left: 9px;
+          top: 36px;
+          color: $purple0;
+          font-size: 22px;
+        }
+        input{
+          border-radius: 30px;
+          border: none;
+          box-shadow: 0px 3px 20px lightgrey;
+          padding-left: 35px;
+          height: 35px;
+          margin-left: 0px;
+        }
+
+        select.browser-default{
+          border-radius: 30px;
+          border: none;
+          box-shadow: 0px 3px 20px lightgrey;
+          width: 300px;
+        }
+        span.invalid-feedback{
+          color: red;
+          margin-left: 10px;
+        }
+        textarea{
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0px 3px 20px lightgrey;
+          height: 100px;
+          padding-left: 10px;
+          padding-right: 10px;
+         }
+        #textareatext{
+          position: relative;
+          top: -10px;
+        }
+      }
+    }
+    .submission{
+      height: 80px;
+    }
+    .check{
+      margin-top: 100px;
+    }
+
+    button{
+      @include buttons;
+    }
+    button:hover{
+      @include buttonsinverse;
+    }
+    .loader{
+        width: 30px;
+    }
+  }
+}
+
+#dropimage .ReactCrop__image{
+  max-width: unset!important;
+}
+
+// Styles For Change Password
+form.changepassword{
+  padding-top: 40px;
+  padding-bottom: 40px;
+    .row{
+     width: 50%;
+     margin: auto;
+     .input-field{
+       input{
+         border-radius: 30px;
+         border: none;
+         box-shadow: 0px 3px 20px lightgrey;
+         padding-left: 35px;
+         height: 35px;
+         margin-left: 0px;
+       }
+       label{
+         color: #111;
+         font-size: 15px;
+         padding-left: 0px;
+         margin-left: 10px;
+         padding-bottom: 10px;
+         top: -5px;
+       }
+       i{
+         position: relative;
+         left: 9px;
+         top: 36px;
+         color: $purple0;
+         font-size: 22px;
+       }
+     }
+     button{
+       @include buttons;
+     }
+     button:hover{
+       @include buttonsinverse;
+     }
+     .loader{
+         width: 30px;
+     }
+   }
+
+}
+
+
+   input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+     border-bottom: none!important;
+     box-shadow: none;
+   }
+
+
+
+// Styles For Delete Account
+   form.deleteaccount{
+     padding-top: 40px;
+     padding-bottom: 40px;
+       .row{
+        width: 50%;
+        margin: auto;
+        .input-field{
+          text-align: center;
+        }
+        button, a{
+          @include buttons;
+          margin-left: 10px;
+          margin-right: 10px;
+
+        }
+        button:hover, a:hover{
+          @include buttonsinverse;
+        }
+        #delete{
+          background: tomato;
+        }
+        .loader{
+            width: 25px;
+            top: 10px;
+            position: relative;
+        }
+      }
+   }
+
+
+// Styles For Profile Image Uploadate
+.MuiDrawer-paperAnchorBottom{
+  background: #eee;
+}
+.MuiDrawer-paperAnchorBottom::-webkit-scrollbar {
+     width: 4px;
+     height: 3px;
+ }
+
+.MuiDrawer-paperAnchorBottom::-webkit-scrollbar-thumb {
+     background: $blue1;
+     border-radius: 3px;
+ }
+  .ReactCrop{
+    max-width: unset!important;
+  }
+   #dropimage{
+      text-align: center;
+     height: 500px;
+     padding-top: 30px;
+     img.loader{
+       width: 30px;
+     }
+     .ReactCrop__image{
+        margin: auto;
+        max-width: 100%;
+     }
+     .dropzone{
+       border: 4px dashed lightgrey;
+       padding: 20px;
+       margin-bottom: 10px;
+       background: #fff;
+       border-radius: 10px;
+     }
+     p{
+       margin-top: 15px;
+
+     }
+     aside{
+        padding-top: 20px;
+        padding-bottom: 40px;
+       button{
+         @include buttons;
+         margin-left: 10px;
+         margin-right: 10px;
+       }
+       button:hover{
+         @include buttonsinverse;
+       }
+     }
+   }

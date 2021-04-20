@@ -1,0 +1,158 @@
+
+
+#item{
+    padding-top: 170px;
+    padding-bottom: 100px;
+  .itemProduct{
+    width: 85%;
+    margin: auto;
+    .filter{
+      text-align: center;
+      form{
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 30px;
+        label{
+          color: $black;
+          font-weight: bold;
+          position: relative;
+          top: 7px;
+          font-size: 13px;
+        }
+        select{
+          display: block!important;
+          border: none;
+          box-shadow: 0px 3px 20px lightgrey;
+          width: 30%;
+          height: 40px;
+          border-radius: 20px;
+          padding-left: 20px;
+        }
+        input{
+          @include buttons;
+        }
+        input:hover{
+          @include buttonsinverse;
+        }
+      }
+    }
+
+
+
+    .card{
+      border-radius: 10px;
+      box-shadow: 0px 3px 20px lightgrey;
+      .card-image{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 150px;
+      img{
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px;
+        }
+        .btn-floating{
+          width: 35px;
+          height: 35px;
+          i{
+            font-size: 1.6rem;
+          }
+        }
+      }
+      .card-content{
+        padding: 8px;
+        p.tip{
+          text-align: left;
+          padding: 10px;
+          font-size: 13px;
+          color: $black;
+          font-weight: lighter;
+          padding: 0px;
+        }
+          p{
+            text-align: left;
+            color: $green;
+            b{
+              font-weight: lighter;
+              font-size: 15px;
+            }
+          }
+      }
+      .card-action{
+        display: flex;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        flex-wrap: wrap;
+        img{
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+          margin-right: 10px;
+        }
+        a{
+          color: $black;
+          font-size: 13px;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+}
+
+.itemProduct{
+  height: 500px;
+  padding-top: 100px;
+  div.row{
+    ul{
+      padding: 10px;
+      box-shadow: 1px 2px 10px lightgrey;
+      li{
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: capitalize;
+        color: darkslateblue;
+        padding: 5px;
+        margin-bottom: 5px;
+
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 900px){
+  #item{
+  .itemProduct{
+  .filter{
+    form{
+      width: 90%;
+      flex-wrap: wrap;
+    }
+    }
+   }
+  }
+}
+
+@media screen and (max-width: 600px){
+
+  #item{
+    .itemProduct{
+      .filter form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        label{
+          margin-bottom: 10px;
+        }
+        select{
+          margin-bottom: 20px;
+          width: 60%;
+        }
+      }
+    }
+  }
+}

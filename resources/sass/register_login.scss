@@ -1,0 +1,124 @@
+#app{
+  main{
+    .container{
+      padding-top: 130px;
+      padding-bottom: 300px;
+      background-position: center;
+      background-repeat: repeat-x;
+      background-size: contain;
+      width: 100%!important;
+      .row{
+        width: 40%;
+        margin: auto;
+        .col-md-8{
+          .card{
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0px 3px 20px lightgrey;
+            padding: 30px 10px 60px 10px;
+            .img-log{
+              text-align: center;
+              img{
+                width: 150px;
+                margin: auto;
+                text-align: center;
+              }
+            }
+            .card-header{
+              font-size: 20px;
+              font-family: $font-family-sans-serif;
+              text-align: center;
+              font-weight: bold;
+              color: $purple0;
+              margin-bottom: 20px;
+            }
+            .card-body{
+              form{
+                padding-top: 20px;
+                .form-group{
+                  margin-top: 10px;
+                    width: 90%;
+                    label{
+                      color: #111;
+                      font-size: 14px;
+                      padding-left: 30px;
+                    }
+                    div.col-md-6{
+                      display: flex;
+                      flex-wrap: wrap;
+                      i{
+                        position: relative;
+                        left: 9px;
+                        top: 28px;
+                      }
+                      span.invalid-feedback{
+                        color: red;
+                      }
+                    }
+                    input{
+                      border-radius: 30px;
+                      border: none;
+                      box-shadow: 0px 3px 20px lightgrey;
+                      padding-left: 35px;
+                      height: 35px;
+                     }
+                    div{
+                      text-align: center;
+                      button, a.btn{
+                        @include buttons;
+                        margin-top: 40px;
+                      }
+                    }
+                }
+                button{
+                  @include buttons;
+                }
+                button:hover{
+                  @include buttonsinverse;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px){
+  #app main .container{
+    background-size: cover;
+    .row{
+      width: 70%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px){
+  #app main .container{
+     .row{
+      width: 85%;
+
+    }
+  }
+  #app main .container .row .col-md-8 .card{
+    padding-left: 10px;
+    padding-right: 20px;
+    .card-header{
+      font-size: 20px;
+    }
+  }
+  #app main .container .row .col-md-8 .card .card-body form .form-group{
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  #app main .container{
+     .row{
+     width: 98%;
+   }
+  }
+
+}

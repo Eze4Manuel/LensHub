@@ -1,0 +1,31 @@
+
+
+#adminloginview{
+
+    .makeStyles-cardHeader-71.makeStyles-warningCardHeader-75:not(.makeStyles-cardHeaderIcon-74), .makeStyles-cardHeader-71.makeStyles-successCardHeader-76:not(.makeStyles-cardHeaderIcon-74), .makeStyles-cardHeader-71.makeStyles-dangerCardHeader-77:not(.makeStyles-cardHeaderIcon-74), .makeStyles-cardHeader-71.makeStyles-infoCardHeader-78:not(.makeStyles-cardHeaderIcon-74), .makeStyles-cardHeader-71.makeStyles-primaryCardHeader-79:not(.makeStyles-cardHeaderIcon-74), .makeStyles-cardHeader-71.makeStyles-roseCardHeader-80:not(.makeStyles-cardHeaderIcon-74){
+      border-radius: 100px;
+      box-shadow: 1px 1px 5px darkblue;
+    }
+
+
+
+
+}
+#reviewer {
+    .card.horizontal {
+      .card-image img{
+        width: 150px!important;
+    }
+    .card-stacked .card-content{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      h5{
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0px;  
+      }
+    }
+    }
+
+}

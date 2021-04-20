@@ -1,0 +1,1949 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;
+
+1,600&display=swap);@import url(https://fonts.googleapis.com/css2?family=Sacramento&display=swap);* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-width: 380px !important;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #0062d8;
+  border-radius: 5px;
+}
+
+.sidenav::-webkit-scrollbar {
+  width: 6px;
+  height: 3px;
+}
+
+.sidenav::-webkit-scrollbar-thumb {
+  background: #1871dc;
+  border-radius: 5px;
+}
+
+#app nav {
+  width: 100%;
+  background: transparent;
+  border: none;
+  position: fixed;
+  z-index: 10000;
+  border: none;
+  box-shadow: none;
+  top: 0px !important;
+}
+
+#app nav .nav-wrapper {
+  width: 80%;
+  margin: auto;
+  border: none;
+  box-shadow: none;
+}
+
+#app nav .nav-wrapper a img {
+  width: 120px;
+}
+
+#app nav .nav-wrapper a.sidenav-trigger {
+  color: #0062d8;
+  float: right;
+}
+
+#app nav .nav-wrapper ul li a {
+  color: #fff;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+#app nav .nav-wrapper ul li a .search {
+  width: 30px;
+  position: relative;
+  top: 10px;
+}
+
+#app nav .nav-wrapper ul li a:hover {
+  background: transparent;
+  color: #1871dc;
+  border-bottom: 2px solid #1871dc;
+  transition: 0.2s;
+}
+
+#app nav .nav-wrapper ul li a.btn {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: lighter;
+  color: #000;
+  background-image: linear-gradient(45deg, #0062d8, #1871dc);
+  color: #fff;
+  border-radius: 20px;
+  transition: 0.2s;
+  border-bottom: none;
+}
+
+#app nav .nav-wrapper ul li a.btn:hover {
+  background-image: linear-gradient(45deg, #1871dc, #0062d8);
+  transition: 0.2s;
+}
+
+#app nav .nav-wrapper ul li a.shop {
+  background: transparent;
+  color: #fff;
+  position: relative;
+  transition: 0.2s;
+}
+
+#app nav .nav-wrapper ul li a.shop img {
+  color: #0062d8;
+  width: 35px;
+  position: relative;
+  top: 10px;
+}
+
+#app nav .nav-wrapper ul li a.shop a.shop:hover {
+  color: #1871dc;
+}
+
+#app nav .nav-wrapper ul a.dropdown-trigger {
+  font-size: 15px;
+  color: #fff;
+  line-height: 46px;
+  height: 46px;
+  margin-top: 10px;
+  background: orange;
+  border-radius: 40px;
+}
+
+#app nav .nav-wrapper ul a.dropdown-trigger:hover {
+  background: black;
+  color: #fff !important;
+}
+
+#app nav .nav-wrapper ul ul#dropdown1 {
+  border-radius: 5px;
+  top: 56px !important;
+  height: auto !important;
+  width: 160px !important;
+}
+
+#app nav .nav-wrapper ul ul#dropdown1 li a {
+  color: #000;
+  font-size: 14px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+#app nav .nav-wrapper ul ul#dropdown1 li a:hover {
+  color: #0062d8;
+  transform: scale(1) !important;
+}
+
+#app ul.sidenav {
+  color: #1871dc;
+  transform: translateX(0%);
+  width: 100%;
+  display: none;
+  height: 100%;
+  z-index: 100000;
+  padding-top: 10px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+}
+
+#app ul.sidenav li {
+  display: block;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#app ul.sidenav li ul.slidedown {
+  height: 0px;
+}
+
+#app ul.sidenav li ul.slidedown li a {
+  text-align: right;
+  box-shadow: 0px 1px 1px #3490dc;
+}
+
+#app ul.sidenav li ul.slidedown li a:hover {
+  opacity: 0.6 !important;
+}
+
+#app ul.sidenav li a {
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 0px 1px 1px lightgrey;
+}
+
+#app ul.sidenav li a img {
+  float: right;
+  width: 40px;
+  position: relative;
+  top: 10px;
+}
+
+#app ul.sidenav li a:hover {
+  background: transparent;
+  color: #fff;
+  transition: 0.3s;
+  opacity: 0.6 !important;
+}
+
+#app ul.sidenav li a.close {
+  float: right;
+  width: 100%;
+  box-shadow: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+#app ul.sidenav li a.close img.logo {
+  width: 160px;
+  height: auto;
+}
+
+#app ul.sidenav li a.close img {
+  width: 30px;
+  height: 30px;
+}
+
+#app ul.sidenav li.close {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  #app nav .nav-wrapper {
+    width: 90%;
+  }
+
+  nav .brand-logo {
+    left: 20%;
+  }
+}
+
+#app main .container {
+  padding-top: 130px;
+  padding-bottom: 300px;
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: contain;
+  width: 100% !important;
+}
+
+#app main .container .row {
+  width: 40%;
+  margin: auto;
+}
+
+#app main .container .row .col-md-8 .card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 3px 20px lightgrey;
+  padding: 30px 10px 60px 10px;
+}
+
+#app main .container .row .col-md-8 .card .img-log {
+  text-align: center;
+}
+
+#app main .container .row .col-md-8 .card .img-log img {
+  width: 150px;
+  margin: auto;
+  text-align: center;
+}
+
+#app main .container .row .col-md-8 .card .card-header {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: #1871dc;
+  margin-bottom: 20px;
+}
+
+#app main .container .row .col-md-8 .card .card-body form {
+  padding-top: 20px;
+}
+
+#app main .container .row .col-md-8 .card .card-body form .form-group {
+  margin-top: 10px;
+  width: 90%;
+}
+
+#app main .container .row .col-md-8 .card .card-body form .form-group label {
+  color: #111;
+  font-size: 14px;
+  padding-left: 30px;
+}
+
+#app main .container .row .col-md-8 .card .card-body form .form-group div.col-md-6 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#app main .container .row .col-md-8 .card .card-body form .form-group div.col-md-6 i {
+  position: relative;
+  left: 9px;
+  top: 28px;
+}
+
+#app main .container .row .col-md-8 .card .card-body form .form-group div.col-md-6 span.invalid-feedback {
+  color: red;
+}
+
+#app main .container .row .col-md-8 .card .card-body form .form-group input {
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 3px 20px lightgrey;
+  padding-left: 35px;
+  height: 35px;
+}
+
+#app main .container .row .col-md-8 .card .card-body form .form-group div {
+  text-align: center;
+}
+
+#app main .container .row .col-md-8 .card .card-body form .form-group div button,
+#app main .container .row .col-md-8 .card .card-body form .form-group div a.btn {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+  margin-top: 40px;
+}
+
+#app main .container .row .col-md-8 .card .card-body form button {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+}
+
+#app main .container .row .col-md-8 .card .card-body form button:hover {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #1871dc, darkblue);
+  color: #fff;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 1200px) {
+  #app main .container {
+    background-size: cover;
+  }
+
+  #app main .container .row {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #app main .container .row {
+    width: 85%;
+  }
+
+  #app main .container .row .col-md-8 .card {
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+
+  #app main .container .row .col-md-8 .card .card-header {
+    font-size: 20px;
+  }
+
+  #app main .container .row .col-md-8 .card .card-body form .form-group {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #app main .container .row {
+    width: 98%;
+  }
+}
+
+#dashboardindex .makeStyles-cardHeader-78.makeStyles-warningCardHeader-82:not(.makeStyles-cardHeaderIcon-81),
+#dashboardindex .makeStyles-cardHeader-78.makeStyles-successCardHeader-83:not(.makeStyles-cardHeaderIcon-81),
+#dashboardindex .makeStyles-cardHeader-78.makeStyles-dangerCardHeader-84:not(.makeStyles-cardHeaderIcon-81),
+#dashboardindex .makeStyles-cardHeader-78.makeStyles-infoCardHeader-85:not(.makeStyles-cardHeaderIcon-81),
+#dashboardindex .makeStyles-cardHeader-78.makeStyles-primaryCardHeader-86:not(.makeStyles-cardHeaderIcon-81),
+#dashboardindex .makeStyles-cardHeader-78.makeStyles-roseCardHeader-87:not(.makeStyles-cardHeaderIcon-81) {
+  border-radius: 50px;
+}
+
+#dashboardindex .makeStyles-tabWrapper-73 {
+  color: #fff;
+}
+
+#dashboardindex .makeStyles-root-95 {
+  max-width: 90% !important;
+  margin-left: auto !important;
+}
+
+#dashboardindex .MuiTypography-displayBlock,
+#dashboardindex .MuiTypography-root {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5px !important;
+}
+
+#dashboardindex .MuiGrid-root .row {
+  width: 100%;
+  margin-left: 10px;
+}
+
+#dashboardindex .MuiGrid-root .row .col .card {
+  border-radius: 7px;
+  box-shadow: 0px 3px 10px lightgrey;
+}
+
+#dashboardindex .MuiGrid-root .row .col .card .card-content {
+  padding: 15px;
+}
+
+#dashboardindex .MuiGrid-root .row .col .card .card-content img {
+  width: 48px;
+  margin: auto;
+}
+
+#dashboardindex .MuiGrid-root .row .col .card .card-content span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#app nav .nav-wrapper ul ul#dropdown1 li a {
+  color: #000 !important;
+}
+
+#submages {
+  display: flex;
+}
+
+#submages img {
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+#showmore {
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #000;
+  width: 70%;
+  margin: auto;
+}
+
+#showmore img {
+  width: 30px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .makeStyles-root-88 {
+    width: 90% !important;
+    max-width: 90% !important;
+    margin: auto;
+  }
+}
+
+#dashboardindex #deleteaccountbutton {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+  background: red;
+}
+
+#dashboardindex #changepasswordbutton {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+}
+
+#dashboardindex .makeStyles-cardAvatar-67.makeStyles-cardAvatarProfile-68 img {
+  width: 150px;
+  height: 150px;
+}
+
+#dashboardindex .makeStyles-tabWrapper-124,
+#dashboardindex .makeStyles-cardTitle-118,
+#dashboardindex .makeStyles-cardTitleWhite-60 {
+  font-weight: "Poppins", sans-serif !important;
+}
+
+#dashboardindex .makeStyles-cardFooter-83 button {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+}
+
+#dashboardindex .makeStyles-cardHeader-73.makeStyles-warningCardHeader-77:not(.makeStyles-cardHeaderIcon-76),
+#dashboardindex .makeStyles-cardHeader-73.makeStyles-successCardHeader-78:not(.makeStyles-cardHeaderIcon-76),
+#dashboardindex .makeStyles-cardHeader-73.makeStyles-dangerCardHeader-79:not(.makeStyles-cardHeaderIcon-76),
+#dashboardindex .makeStyles-cardHeader-73.makeStyles-infoCardHeader-80:not(.makeStyles-cardHeaderIcon-76),
+#dashboardindex .makeStyles-cardHeader-73.makeStyles-primaryCardHeader-81:not(.makeStyles-cardHeaderIcon-76),
+#dashboardindex .makeStyles-cardHeader-73.makeStyles-roseCardHeader-82:not(.makeStyles-cardHeaderIcon-76) {
+  border-radius: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#dashboardindex .makeStyles-cardHeader-73.makeStyles-warningCardHeader-77:not(.makeStyles-cardHeaderIcon-76) button.btn,
+#dashboardindex .makeStyles-cardHeader-73.makeStyles-successCardHeader-78:not(.makeStyles-cardHeaderIcon-76) button.btn,
+#dashboardindex .makeStyles-cardHeader-73.makeStyles-dangerCardHeader-79:not(.makeStyles-cardHeaderIcon-76) button.btn,
+#dashboardindex .makeStyles-cardHeader-73.makeStyles-infoCardHeader-80:not(.makeStyles-cardHeaderIcon-76) button.btn,
+#dashboardindex .makeStyles-cardHeader-73.makeStyles-primaryCardHeader-81:not(.makeStyles-cardHeaderIcon-76) button.btn,
+#dashboardindex .makeStyles-cardHeader-73.makeStyles-roseCardHeader-82:not(.makeStyles-cardHeaderIcon-76) button.btn {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+}
+
+#dashboardindex header.MuiPaper-root div a.MuiButtonBase-root {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+#dashboardindex .MuiTabs-flexContainer button {
+  flex-grow: 1 !important;
+}
+
+#dashboardindex form#userprofileform {
+  width: 90% !important;
+  margin: auto;
+}
+
+#dashboardindex form#userprofileform .row h4 {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 20px;
+}
+
+#dashboardindex form#userprofileform .row .input-field label {
+  color: #111;
+  font-size: 15px;
+  padding-left: 0px;
+  margin-left: 10px;
+  top: -9px;
+  font-weight: bold;
+}
+
+#dashboardindex form#userprofileform .row .input-field i {
+  position: relative;
+  left: 9px;
+  top: 36px;
+  color: #1871dc;
+  font-size: 22px;
+}
+
+#dashboardindex form#userprofileform .row .input-field input {
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 3px 20px lightgrey;
+  padding-left: 35px;
+  height: 35px;
+  margin-left: 0px;
+}
+
+#dashboardindex form#userprofileform .row .input-field select.browser-default {
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 3px 20px lightgrey;
+  width: 300px;
+}
+
+#dashboardindex form#userprofileform .row .input-field span.invalid-feedback {
+  color: red;
+  margin-left: 10px;
+}
+
+#dashboardindex form#userprofileform .row .input-field textarea {
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 20px lightgrey;
+  height: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#dashboardindex form#userprofileform .row .input-field #textareatext {
+  position: relative;
+  top: -10px;
+}
+
+#dashboardindex form#userprofileform .submission {
+  height: 80px;
+}
+
+#dashboardindex form#userprofileform .check {
+  margin-top: 100px;
+}
+
+#dashboardindex form#userprofileform button {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+}
+
+#dashboardindex form#userprofileform button:hover {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #1871dc, darkblue);
+  color: #fff;
+  transition: 0.4s;
+}
+
+#dashboardindex form#userprofileform .loader {
+  width: 30px;
+}
+
+#dropimage .ReactCrop__image {
+  max-width: unset !important;
+}
+
+form.changepassword {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+form.changepassword .row {
+  width: 50%;
+  margin: auto;
+}
+
+form.changepassword .row .input-field input {
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 3px 20px lightgrey;
+  padding-left: 35px;
+  height: 35px;
+  margin-left: 0px;
+}
+
+form.changepassword .row .input-field label {
+  color: #111;
+  font-size: 15px;
+  padding-left: 0px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  top: -5px;
+}
+
+form.changepassword .row .input-field i {
+  position: relative;
+  left: 9px;
+  top: 36px;
+  color: #1871dc;
+  font-size: 22px;
+}
+
+form.changepassword .row button {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+}
+
+form.changepassword .row button:hover {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #1871dc, darkblue);
+  color: #fff;
+  transition: 0.4s;
+}
+
+form.changepassword .row .loader {
+  width: 30px;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: none !important;
+  box-shadow: none;
+}
+
+form.deleteaccount {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+form.deleteaccount .row {
+  width: 50%;
+  margin: auto;
+}
+
+form.deleteaccount .row .input-field {
+  text-align: center;
+}
+
+form.deleteaccount .row button,
+form.deleteaccount .row a {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+form.deleteaccount .row button:hover,
+form.deleteaccount .row a:hover {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #1871dc, darkblue);
+  color: #fff;
+  transition: 0.4s;
+}
+
+form.deleteaccount .row #delete {
+  background: tomato;
+}
+
+form.deleteaccount .row .loader {
+  width: 25px;
+  top: 10px;
+  position: relative;
+}
+
+.MuiDrawer-paperAnchorBottom {
+  background: #eee;
+}
+
+.MuiDrawer-paperAnchorBottom::-webkit-scrollbar {
+  width: 4px;
+  height: 3px;
+}
+
+.MuiDrawer-paperAnchorBottom::-webkit-scrollbar-thumb {
+  background: #0062d8;
+  border-radius: 3px;
+}
+
+.ReactCrop {
+  max-width: unset !important;
+}
+
+#dropimage {
+  text-align: center;
+  height: 500px;
+  padding-top: 30px;
+}
+
+#dropimage img.loader {
+  width: 30px;
+}
+
+#dropimage .ReactCrop__image {
+  margin: auto;
+  max-width: 100%;
+}
+
+#dropimage .dropzone {
+  border: 4px dashed lightgrey;
+  padding: 20px;
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+#dropimage p {
+  margin-top: 15px;
+}
+
+#dropimage aside {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+#dropimage aside button {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#dropimage aside button:hover {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #1871dc, darkblue);
+  color: #fff;
+  transition: 0.4s;
+}
+
+#alldone {
+  text-align: center;
+}
+
+#alldone h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#alldone img {
+  text-align: center;
+  width: 140px;
+  margin: auto;
+  text-align: center;
+}
+
+#dashboardindex button:focus {
+  background-color: darkblue !important;
+}
+
+#dashboardindex .makeStyles-cardTitle-63 {
+  display: none;
+}
+
+#dashboardindex .makeStyles-tabWrapper-124,
+#dashboardindex .makeStyles-cardTitle-118 {
+  font-weight: "Poppins", sans-serif !important;
+}
+
+#dashboardindex .makeStyles-cardHeader-74.makeStyles-warningCardHeader-78:not(.makeStyles-cardHeaderIcon-77),
+#dashboardindex .makeStyles-cardHeader-74.makeStyles-successCardHeader-79:not(.makeStyles-cardHeaderIcon-77),
+#dashboardindex .makeStyles-cardHeader-74.makeStyles-dangerCardHeader-80:not(.makeStyles-cardHeaderIcon-77),
+#dashboardindex .makeStyles-cardHeader-74.makeStyles-infoCardHeader-81:not(.makeStyles-cardHeaderIcon-77),
+#dashboardindex .makeStyles-cardHeader-74.makeStyles-primaryCardHeader-82:not(.makeStyles-cardHeaderIcon-77),
+#dashboardindex .makeStyles-cardHeader-74.makeStyles-roseCardHeader-83:not(.makeStyles-cardHeaderIcon-77) {
+  border-radius: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#dashboardindex header.MuiPaper-root div a.MuiButtonBase-root {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+#dashboardindex .MuiTabs-flexContainer button {
+  flex-grow: 1 !important;
+}
+
+#dashboardindex form#rentform1,
+#dashboardindex form#rentform3 {
+  width: 90% !important;
+  margin: auto;
+}
+
+#dashboardindex form#rentform1 .row h4,
+#dashboardindex form#rentform3 .row h4 {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 20px;
+}
+
+#dashboardindex form#rentform1 .row .input-field label,
+#dashboardindex form#rentform3 .row .input-field label {
+  color: #111;
+  font-size: 15px;
+  padding-left: 0px;
+  margin-left: 10px;
+  font-weight: bold;
+  top: 20px;
+  left: 40px;
+}
+
+#dashboardindex form#rentform1 .row .input-field label.exempt,
+#dashboardindex form#rentform3 .row .input-field label.exempt {
+  top: -10px;
+}
+
+#dashboardindex form#rentform1 .row .input-field i,
+#dashboardindex form#rentform3 .row .input-field i {
+  position: relative;
+  left: 9px;
+  top: 35px;
+  font-size: 20px;
+  color: #1871dc;
+}
+
+#dashboardindex form#rentform1 .row .input-field input,
+#dashboardindex form#rentform3 .row .input-field input {
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 3px 20px lightgrey;
+  padding-left: 35px;
+  height: 35px;
+  margin-left: 0px;
+}
+
+#dashboardindex form#rentform1 .row .input-field select.browser-default,
+#dashboardindex form#rentform3 .row .input-field select.browser-default {
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 3px 20px lightgrey;
+  width: 200px;
+  height: 36px;
+}
+
+#dashboardindex form#rentform1 .row .input-field span.invalid-feedback,
+#dashboardindex form#rentform3 .row .input-field span.invalid-feedback {
+  color: red;
+  margin-left: 10px;
+}
+
+#dashboardindex form#rentform1 .row .input-field textarea,
+#dashboardindex form#rentform3 .row .input-field textarea {
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 20px lightgrey;
+  height: 100px;
+  padding-left: 10px;
+}
+
+#dashboardindex form#rentform1 .check,
+#dashboardindex form#rentform3 .check {
+  margin-top: 100px;
+}
+
+#dashboardindex form#rentform1 div button,
+#dashboardindex form#rentform3 div button {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+#dashboardindex form#rentform1 div button:hover,
+#dashboardindex form#rentform3 div button:hover {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #1871dc, darkblue);
+  color: #fff;
+  transition: 0.4s;
+}
+
+#dashboardindex form#rentform1 div img,
+#dashboardindex form#rentform3 div img {
+  width: 30px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+#dashboardindex form#rentform1 div button.chiwell,
+#dashboardindex form#rentform3 div button.chiwell {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: lighter;
+  margin-right: 20px;
+  padding: 7px;
+  margin-top: 20px;
+}
+
+#dashboardindex form#rentform1 div button.chiwell.chill,
+#dashboardindex form#rentform3 div button.chiwell.chill {
+  background: green;
+}
+
+#dashboardindex form#rentform1 div button.chiwell.chill:hover,
+#dashboardindex form#rentform3 div button.chiwell.chill:hover {
+  background: green;
+  opacity: 0.7;
+}
+
+#dashboardindex form#rentform1 .loader img,
+#dashboardindex form#rentform3 .loader img {
+  width: 30px;
+}
+
+#dashboardindex .form2 .upload__image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dashboardindex .form2 .upload__image-wrapper h5 {
+  font-weight: bold;
+  text-align: center;
+}
+
+#dashboardindex .form2 .upload__image-wrapper button.uploadbtn {
+  width: 100%;
+  height: 130px;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  border-radius: 8px;
+  border: 3px dashed lightgrey;
+}
+
+#dashboardindex .form2 .upload__image-wrapper button.uploadbtn:hover,
+#dashboardindex .form2 .upload__image-wrapper button.clearbtn:hover {
+  background: #fff;
+  color: #000;
+}
+
+#dashboardindex .form2 .upload__image-wrapper button.clearbtn {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 13px;
+  background: transparent;
+  color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 1px 4px lightgrey;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#dashboardindex .form2 .upload__image-wrapper .gaurdian {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#dashboardindex .form2 .upload__image-wrapper .gaurdian .image-item {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100px;
+  margin-right: 10px;
+}
+
+#dashboardindex .form2 .upload__image-wrapper .gaurdian .image-item img {
+  border-radius: 5px;
+}
+
+#dashboardindex .form2 .upload__image-wrapper .gaurdian .image-item__btn-wrapper {
+  width: 100px;
+  text-align: center;
+}
+
+#dashboardindex .form2 .upload__image-wrapper .gaurdian .image-item__btn-wrapper i {
+  cursor: pointer;
+}
+
+#dashboardindex .form2 .upload__image-wrapper .loader img {
+  width: 30px;
+}
+
+@media screen and (max-width: 995px) {
+  #dashboardindex form#rentform1 .row .input-field.select-field {
+    margin-bottom: 90px;
+  }
+
+  #dashboardindex form#rentform1 .row .input-field select.browser-default {
+    width: 200px;
+  }
+
+  #dashboardindex form#rentform1 .check {
+    margin-top: 0px;
+  }
+}
+
+#adminloginview .makeStyles-cardHeader-71.makeStyles-warningCardHeader-75:not(.makeStyles-cardHeaderIcon-74),
+#adminloginview .makeStyles-cardHeader-71.makeStyles-successCardHeader-76:not(.makeStyles-cardHeaderIcon-74),
+#adminloginview .makeStyles-cardHeader-71.makeStyles-dangerCardHeader-77:not(.makeStyles-cardHeaderIcon-74),
+#adminloginview .makeStyles-cardHeader-71.makeStyles-infoCardHeader-78:not(.makeStyles-cardHeaderIcon-74),
+#adminloginview .makeStyles-cardHeader-71.makeStyles-primaryCardHeader-79:not(.makeStyles-cardHeaderIcon-74),
+#adminloginview .makeStyles-cardHeader-71.makeStyles-roseCardHeader-80:not(.makeStyles-cardHeaderIcon-74) {
+  border-radius: 100px;
+  box-shadow: 1px 1px 5px darkblue;
+}
+
+#reviewer .card.horizontal .card-image img {
+  width: 150px !important;
+}
+
+#reviewer .card.horizontal .card-stacked .card-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#reviewer .card.horizontal .card-stacked .card-content h5 {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0px;
+}
+
+body {
+  background: #fff !important;
+}
+
+#home .slider {
+  height: 450px !important;
+}
+
+#home .slider .slides {
+  height: 450px !important;
+}
+
+#home .slider .indicators {
+  position: relative;
+  top: -30px;
+  z-index: 10;
+}
+
+#home .slider .indicators .indicator-item {
+  width: 10px;
+  height: 10px;
+}
+
+#home .slider .indicators .indicator-item.active {
+  background-color: #0062d8;
+}
+
+#home .searchform {
+  width: 100%;
+  position: absolute;
+  top: 200px;
+  z-index: 10;
+}
+
+#home .searchform form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#home .searchform form input.search {
+  width: 80%;
+  border-radius: 30px;
+  box-shadow: 0px 3px 20px #1871dc;
+  padding-left: 20px;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  height: 48px;
+}
+
+#home .searchform form select {
+  display: block;
+  width: 30%;
+  position: relative;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  left: -30px;
+  border-radius: 30px;
+  box-shadow: 0px 3px 20px #1871dc;
+  padding: 0px 10px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  height: 48px;
+  border: none;
+}
+
+#home .searchform form select option {
+  background: #1871dc;
+  color: #fff;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+#home .searchform form input.button {
+  width: 20%;
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+  height: 48px;
+  border-radius: 30px;
+  position: relative;
+  left: 15px;
+}
+
+#home .searchform form input.button:hover {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #1871dc, darkblue);
+  color: #fff;
+  transition: 0.4s;
+}
+
+#home .logos {
+  width: 100%;
+  background: #ddd;
+}
+
+#home .logos ul {
+  width: 50%;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#home .logos ul li img {
+  width: 60px;
+}
+
+#home .rent-text {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  padding: 80px 0px 20px 0px;
+}
+
+#home .rent-text h2 {
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  color: #0062d8;
+  font-size: 40px;
+}
+
+#home .rent-text p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#home .products {
+  padding-bottom: 120px;
+}
+
+#home .products .categories {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+#home .products .categories ul {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  padding: 30px 20px;
+  margin: auto;
+  border-radius: 40px;
+  box-shadow: 0px 3px 20px #0062d8;
+}
+
+#home .products .categories ul li {
+  font-weight: bold;
+}
+
+#home .products .owl-carousel.categories.owl-drag .owl-item {
+  transition: 0.3s;
+}
+
+#home .products .owl-theme .owl-nav {
+  font-size: 30px;
+}
+
+#home .products .owl-carousel .owl-item img {
+  width: 50%;
+  margin: auto;
+}
+
+#home .products .owl-carousel.categories.owl-drag .owl-item:hover {
+  box-shadow: 0px 3px 10px lightgrey;
+  padding: 10px 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+#home .products .owl-carousel .owl-nav.disabled,
+#home .products .owl-carousel .owl-dots.disabled {
+  display: block;
+}
+
+#home .products .owl-carousel {
+  width: 85%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+#home .products .owl-carousel .owl-stage-outer .owl-stage {
+  padding: 20px 0px 20px 0px;
+}
+
+#home .products .owl-carousel .owl-stage-outer .owl-stage .owl-item .card {
+  border-radius: 10px;
+  box-shadow: 0px 3px 20px lightgrey;
+}
+
+#home .products .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-image {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 150px;
+}
+
+#home .products .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-image img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#home .products .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-image .btn-floating {
+  width: 35px;
+  height: 35px;
+}
+
+#home .products .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-image .btn-floating i {
+  font-size: 1.6rem;
+}
+
+#home .products .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-content {
+  padding: 8px;
+}
+
+#home .products .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-content p.tip {
+  text-align: left;
+  padding: 10px;
+  font-size: 13px;
+  color: #000;
+  font-weight: lighter;
+  padding: 0px;
+}
+
+#home .products .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-content p {
+  text-align: left;
+  color: #38c172;
+}
+
+#home .products .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-content p b {
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+#home .products .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-action {
+  display: flex;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  flex-wrap: wrap;
+}
+
+#home .products .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-action img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+#home .products .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-action a {
+  color: #000;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+#home .sect1 {
+  width: 100%;
+  padding: 100px 0px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+}
+
+#home .sect1 div.rowed {
+  display: flex;
+}
+
+#home .sect1 div.rowed div {
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home .sect1 div.rowed div h3 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#home .sect1 div.rowed div p {
+  color: #fff;
+  text-align: left;
+}
+
+#home .sect1 div.rowed div p.btn {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+  height: 55px;
+  line-height: 55px;
+  font-size: 15px;
+  border-radius: 34px;
+  padding-top: 0px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+#home .sect1 div.rowed div p.btn:hover {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #1871dc, darkblue);
+  color: #fff;
+  transition: 0.4s;
+}
+
+#home .sect1 div.rowed div img {
+  border-radius: 12px;
+  width: 100%;
+}
+
+#home .sect1 div.subtext {
+  width: 70%;
+  margin: auto;
+}
+
+#home .sect1 div.subtext p {
+  padding-top: 40px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#home .sect2 {
+  background-image: url("/images/logo/backg.jpg");
+  height: 150px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+#home .sect3 {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+#home .sect3 h3 {
+  text-align: left;
+  font-size: 30px;
+  color: #fff;
+  margin: 0px;
+}
+
+#home .products .filter h4 {
+  text-align: center;
+  font-weight: bold;
+  font-family: poppinsblack;
+}
+
+@media screen and (max-width: 1080px) {
+  #home .products .categories ul {
+    width: 95%;
+    flex-wrap: wrap;
+    border-radius: 100px;
+  }
+
+  #home .products .categories ul li {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #home .rent-text {
+    width: 90%;
+    padding-top: 50px;
+  }
+
+  #home .products .categories ul {
+    flex-direction: column;
+    border-radius: 0px;
+    text-align: center;
+  }
+
+  #home .sect2 {
+    height: 200px;
+  }
+
+  #home .sect1 {
+    padding-top: 20px;
+  }
+
+  #home .sect1 div.rowed {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home .sect1 div.rowed div h3 {
+    text-align: center;
+  }
+
+  #home .sect1 div.rowed div p {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #home .logos ul {
+    width: 80%;
+  }
+
+  #home .rent-text h2 {
+    font-size: 40px;
+  }
+
+  #home .rent-text p {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+
+  #home .products .filter form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home .products .filter form label {
+    margin-bottom: 10px;
+  }
+
+  #home .products .filter form select {
+    margin-bottom: 20px;
+    width: 60%;
+  }
+
+  #home .sect1 div.rowed div {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #home .sect1 div.rowed div h3 {
+    font-size: 25px;
+  }
+
+  #home .sect1 div.rowed div p {
+    margin-bottom: 20px;
+  }
+
+  #home .sect1 div.subtext {
+    width: 90%;
+  }
+
+  #home .sect3 {
+    height: 300px;
+  }
+
+  #home .products .owl-carousel .owl-stage-outer .owl-stage .owl-item .card .card-action {
+    padding: 10px 5px;
+  }
+}
+
+#item {
+  padding-top: 170px;
+  padding-bottom: 100px;
+}
+
+#item .items {
+  width: 85%;
+  margin: auto;
+}
+
+#item .items .filter {
+  text-align: center;
+}
+
+#item .items .filter form {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+#item .items .filter form label {
+  color: #000;
+  font-weight: bold;
+  position: relative;
+  top: 7px;
+  font-size: 13px;
+}
+
+#item .items .filter form select {
+  display: block !important;
+  border: none;
+  box-shadow: 0px 3px 20px lightgrey;
+  width: 30%;
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+#item .items .filter form input {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+}
+
+#item .items .filter form input:hover {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #1871dc, darkblue);
+  color: #fff;
+  transition: 0.4s;
+}
+
+#item .items .card {
+  border-radius: 10px;
+  box-shadow: 0px 3px 20px lightgrey;
+}
+
+#item .items .card .card-image {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 150px;
+}
+
+#item .items .card .card-image img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#item .items .card .card-image .btn-floating {
+  width: 35px;
+  height: 35px;
+}
+
+#item .items .card .card-image .btn-floating i {
+  font-size: 1.6rem;
+}
+
+#item .items .card .card-content {
+  padding: 8px;
+}
+
+#item .items .card .card-content p.tip {
+  text-align: left;
+  padding: 10px;
+  font-size: 13px;
+  color: #000;
+  font-weight: lighter;
+  padding: 0px;
+}
+
+#item .items .card .card-content p {
+  text-align: left;
+  color: #38c172;
+}
+
+#item .items .card .card-content p b {
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+#item .items .card .card-action {
+  display: flex;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  flex-wrap: wrap;
+}
+
+#item .items .card .card-action img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+#item .items .card .card-action a {
+  color: #000;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 900px) {
+  #item .items .filter form {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #item .items .filter form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #item .items .filter form label {
+    margin-bottom: 10px;
+  }
+
+  #item .items .filter form select {
+    margin-bottom: 20px;
+    width: 60%;
+  }
+}
+
+#item {
+  padding-top: 170px;
+  padding-bottom: 100px;
+}
+
+#item .itemProduct {
+  width: 85%;
+  margin: auto;
+}
+
+#item .itemProduct .filter {
+  text-align: center;
+}
+
+#item .itemProduct .filter form {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+#item .itemProduct .filter form label {
+  color: #000;
+  font-weight: bold;
+  position: relative;
+  top: 7px;
+  font-size: 13px;
+}
+
+#item .itemProduct .filter form select {
+  display: block !important;
+  border: none;
+  box-shadow: 0px 3px 20px lightgrey;
+  width: 30%;
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+#item .itemProduct .filter form input {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+}
+
+#item .itemProduct .filter form input:hover {
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #1871dc, darkblue);
+  color: #fff;
+  transition: 0.4s;
+}
+
+#item .itemProduct .card {
+  border-radius: 10px;
+  box-shadow: 0px 3px 20px lightgrey;
+}
+
+#item .itemProduct .card .card-image {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 150px;
+}
+
+#item .itemProduct .card .card-image img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#item .itemProduct .card .card-image .btn-floating {
+  width: 35px;
+  height: 35px;
+}
+
+#item .itemProduct .card .card-image .btn-floating i {
+  font-size: 1.6rem;
+}
+
+#item .itemProduct .card .card-content {
+  padding: 8px;
+}
+
+#item .itemProduct .card .card-content p.tip {
+  text-align: left;
+  padding: 10px;
+  font-size: 13px;
+  color: #000;
+  font-weight: lighter;
+  padding: 0px;
+}
+
+#item .itemProduct .card .card-content p {
+  text-align: left;
+  color: #38c172;
+}
+
+#item .itemProduct .card .card-content p b {
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+#item .itemProduct .card .card-action {
+  display: flex;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  flex-wrap: wrap;
+}
+
+#item .itemProduct .card .card-action img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+#item .itemProduct .card .card-action a {
+  color: #000;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.itemProduct {
+  height: 500px;
+  padding-top: 100px;
+}
+
+.itemProduct div.row ul {
+  padding: 10px;
+  box-shadow: 1px 2px 10px lightgrey;
+}
+
+.itemProduct div.row ul li {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: darkslateblue;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  #item .itemProduct .filter form {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #item .itemProduct .filter form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #item .itemProduct .filter form label {
+    margin-bottom: 10px;
+  }
+
+  #item .itemProduct .filter form select {
+    margin-bottom: 20px;
+    width: 60%;
+  }
+}
+
+.footer {
+  background: #040010;
+  padding-top: 100px;
+}
+
+.footer .row {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .row div h3 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer .row div ul li a {
+  color: #ddd;
+  font-weight: lighter;
+}
+
+.footer .row div ul form input.button {
+  border-radius: 30px;
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, darkblue, #1871dc);
+  color: #fff;
+  font-size: 13px;
+  transition: 0.4s;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer p {
+  color: #fff;
+  text-align: center;
+  margin: 0px;
+}
+

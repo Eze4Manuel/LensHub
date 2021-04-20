@@ -1,0 +1,46 @@
+
+
+.footer{
+  background: #040010;
+  padding-top: 100px;
+  .row{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    div{
+      h3{
+        font-size: 16px;
+        color: #fff;
+        font-weight: bold;
+      }
+      ul{
+        li{
+          a{
+            color: #ddd;
+            font-weight: lighter;
+          }
+        }
+        form{
+          input.button{
+            border-radius: 30px;
+            @include buttons;
+          }
+        }
+      }
+    }
+  }
+  p{
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #foot{
+
+  }
+
+}

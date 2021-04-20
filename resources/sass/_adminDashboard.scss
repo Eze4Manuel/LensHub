@@ -1,0 +1,81 @@
+
+#dashboardindex{
+  .makeStyles-cardHeader-78.makeStyles-warningCardHeader-82:not(.makeStyles-cardHeaderIcon-81), .makeStyles-cardHeader-78.makeStyles-successCardHeader-83:not(.makeStyles-cardHeaderIcon-81), .makeStyles-cardHeader-78.makeStyles-dangerCardHeader-84:not(.makeStyles-cardHeaderIcon-81), .makeStyles-cardHeader-78.makeStyles-infoCardHeader-85:not(.makeStyles-cardHeaderIcon-81), .makeStyles-cardHeader-78.makeStyles-primaryCardHeader-86:not(.makeStyles-cardHeaderIcon-81), .makeStyles-cardHeader-78.makeStyles-roseCardHeader-87:not(.makeStyles-cardHeaderIcon-81){
+    border-radius: 50px;
+  }
+  .makeStyles-tabWrapper-73{
+    color: #fff;
+  }
+  .makeStyles-root-95{
+    max-width: 90%!important;
+    margin-left: auto!important;
+  }
+  .MuiTypography-displayBlock, .MuiTypography-root{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 5px!important;
+  }
+
+  .MuiGrid-root{
+ 
+    .row{
+      width: 100%;
+      margin-left: 10px;
+
+      .col{
+        .card{
+          border-radius: 7px;
+          box-shadow: 0px 3px 10px lightgrey;
+          .card-content{
+            padding: 15px;
+            img{
+              width: 48px;
+              margin: auto;
+            }
+            span{
+              font-weight: bold;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#app nav .nav-wrapper ul ul#dropdown1 li a {
+  color: #000!important;
+}
+
+#submages{
+  display: flex;
+     img{
+      width: 100px;
+      margin-right: 10px;
+      border-radius: 10px;
+     }
+ }
+ #showmore{
+   font-size: 15px;
+   cursor: pointer;
+   font-weight: bold;
+   color: #000;
+   width: 70%;
+   margin: auto;
+   img{
+     width: 30px;
+     position: relative;
+     top: 10px;
+     left: 10px;
+   }
+
+ }
+
+@media screen and (max-width: 700px){
+  .makeStyles-root-88{
+    width: 90%!important;
+    max-width: 90%!important;
+    margin: auto;
+  }
+}

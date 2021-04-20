@@ -1,0 +1,230 @@
+#alldone{
+  text-align: center;
+  h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  img{
+    text-align: center;
+    width: 140px;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+#dashboardindex{
+  button:focus{
+    background-color: darkblue!important;
+  }
+  .makeStyles-cardTitle-63{
+    display: none;
+  }
+  .makeStyles-tabWrapper-124, .makeStyles-cardTitle-118{
+    font-weight: $font-family-sans-serif!important;
+  }
+  .makeStyles-cardHeader-74.makeStyles-warningCardHeader-78:not(.makeStyles-cardHeaderIcon-77), .makeStyles-cardHeader-74.makeStyles-successCardHeader-79:not(.makeStyles-cardHeaderIcon-77), .makeStyles-cardHeader-74.makeStyles-dangerCardHeader-80:not(.makeStyles-cardHeaderIcon-77), .makeStyles-cardHeader-74.makeStyles-infoCardHeader-81:not(.makeStyles-cardHeaderIcon-77), .makeStyles-cardHeader-74.makeStyles-primaryCardHeader-82:not(.makeStyles-cardHeaderIcon-77), .makeStyles-cardHeader-74.makeStyles-roseCardHeader-83:not(.makeStyles-cardHeaderIcon-77){
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  header.MuiPaper-root{
+    div{
+      a.MuiButtonBase-root{
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+      }
+    }
+  }
+  .MuiTabs-flexContainer{
+    button{
+      flex-grow: 1!important;
+    }
+  }
+
+
+  form#rentform1, form#rentform3{
+    width: 90%!important;
+    margin: auto;
+    .row{
+      h4{
+        font-weight: bold;
+        font-family: $font-family-sans-serif!important;
+        font-size: 20px;
+      }
+
+      .input-field{
+        label{
+          color: #111;
+          font-size: 15px;
+          padding-left: 0px;
+          margin-left: 10px;
+          font-weight: bold;
+          top: 20px;
+          left: 40px;
+        }
+        label.exempt{
+        top: -10px;
+        }
+        i{
+          position: relative;
+          left: 9px;
+          top: 35px;
+          font-size: 20px;
+          color: $purple0;
+        }
+        input{
+          border-radius: 30px;
+          border: none;
+          box-shadow: 0px 3px 20px lightgrey;
+          padding-left: 35px;
+          height: 35px;
+          margin-left: 0px;
+        }
+
+        select.browser-default{
+          border-radius: 30px;
+          border: none;
+          box-shadow: 0px 3px 20px lightgrey;
+          width: 200px;
+          height: 36px;
+        }
+        span.invalid-feedback{
+          color: red;
+          margin-left: 10px;
+        }
+        textarea{
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0px 3px 20px lightgrey;
+          height: 100px;
+          padding-left: 10px;
+         }
+      }
+
+    }
+    .check{
+      margin-top: 100px;
+    }
+    div{
+      button{
+        @include buttons;
+        margin-bottom: 20px;
+
+      }
+      button:hover{
+        @include buttonsinverse;
+      }
+      img{
+        width: 30px;
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+      button.chiwell{
+        @include buttons;
+        font-size: 13px;
+        font-weight: lighter;
+        margin-right: 20px;
+        padding: 7px;
+        margin-top: 20px;
+      }
+      button.chiwell.chill{
+        background: green;
+      }
+      button.chiwell.chill:hover{
+        background: green;
+        opacity: 0.7;
+      }
+
+    }
+    .loader{
+       img{
+          width: 30px;
+      }
+    }
+ }
+
+  .form2{
+    .upload__image-wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+        h5{
+          font-weight: bold;
+          text-align: center;
+        }
+      button.uploadbtn{
+        width: 100%;
+        height: 130px;
+        background: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+        border-radius: 8px;
+        border: 3px dashed lightgrey;
+      }
+      button.uploadbtn:hover, button.clearbtn:hover{
+          background: #fff;
+          color: #000;
+        }
+      button.clearbtn{
+        @include buttons;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+        font-size: 13px;
+         background: transparent;
+        color: #fff;
+        width: fit-content;
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0px 1px 4px lightgrey;
+        margin: auto;
+        margin-top: 20px;
+      }
+
+      .gaurdian{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        .image-item{
+          margin-left: 0px;
+          margin-right: 0px;
+          width: 100px;
+          margin-right: 10px;
+          img{
+            border-radius: 5px;
+          }
+        }
+        .image-item__btn-wrapper {
+          width: 100px;
+          text-align: center;
+          i{
+            cursor: pointer;
+          }
+        }
+      }
+      .loader{
+        img{
+            width: 30px;
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 995px){
+  #dashboardindex form#rentform1 .row .input-field.select-field{
+    margin-bottom: 90px;
+  }
+  #dashboardindex form#rentform1 .row .input-field select.browser-default{
+    width: 200px;
+  }
+  #dashboardindex form#rentform1 .check{
+    margin-top: 0px;
+  }
+}
